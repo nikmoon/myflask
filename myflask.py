@@ -25,7 +25,6 @@ def test():
 @app.route('/hello/')
 @app.route('/hello/<username>')
 def hello_user(username = None):
-    abort(401)
     return render_template('hello.html', username = username)
 
 
